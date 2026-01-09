@@ -15,6 +15,9 @@ export const usePokemonGame = () => {
     let timerId: number;
 
     const randomPokemon = computed( () => {
+      if (pokemonsOptions.value.length === 0) {
+        return { id: 1, name: '' } as Pokemon;
+      }
 
       const randomIndex = Math.floor(Math.random() * pokemonsOptions.value.length);
       return pokemonsOptions.value[randomIndex];

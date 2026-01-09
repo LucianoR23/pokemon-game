@@ -21,7 +21,7 @@
     "@tsconfig/node20": "^20.1.4",
     "@types/canvas-confetti": "^1.6.4",
     "@types/node": "^20.17.0",
-    "@vitejs/plugin-vue": "^5.1.4",
+    "@vitejs/plugin-vue": "^6.0.3",
     "@vue/eslint-config-prettier": "^10.0.0",
     "@vue/eslint-config-typescript": "^14.1.1",
     "@vue/tsconfig": "^0.5.1",
