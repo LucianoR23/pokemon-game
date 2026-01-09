@@ -1,7 +1,7 @@
 <template>
-  <section v-if="isLoading || randomPokemon.id === null" class="flex flex-col justify-center items-center w-screen h-screen">
-    <h1 class="text-3xl">Espere por favor</h1>
-    <h3 class="animate-pulse">Cargando Pokemon</h3>
+  <section v-if="isLoading || randomPokemon?.id === null" class="flex flex-col justify-center items-center w-screen h-screen">
+    <h1 v-if="isLoading" class="text-3xl">Espere por favor</h1>
+    <h3 v-if="isLoading" class="animate-pulse">Cargando Pokemon</h3>
     <button @click="selectDifficulty()" class="absolute bottom-80 left-1/4">Empezar a jugar - facil</button>
     <button @click=selectDifficulty(6) class="absolute bottom-80">Empezar a jugar - medio</button>
     <button @click=selectDifficulty(10) class="absolute bottom-80 right-1/4">Empezar a jugar - dificil</button>
